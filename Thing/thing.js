@@ -12,3 +12,7 @@ var HttpClient = function() {
 }
 
 
+var client = new HttpClient();
+client.get('', function(response) {
+    // do something with response
+});
