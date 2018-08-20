@@ -13,6 +13,9 @@ var HttpClient = function() {
 
 
 var client = new HttpClient();
-client.get('', function(response) {
-    // do something with response
+client.get('http://hopscotchprojects.s3.amazonaws.com/production/xoyj1en4m.hopscotch?format=json&diagnostics=true', function(response) {
+    let div = document.querySelector('#div');
+    var output = document.createElement('p');
+    output.textContent = result;
+    div.appendChild(output);
 });
